@@ -42,6 +42,7 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-color: #1a4032;
 }
 
 .price {
