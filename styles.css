@@ -1,0 +1,180 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-top: 2rem;
+
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-family: 700;
+    color: hsl(212, 21%, 14%);
+    padding: 0;
+    font-optical-sizing: auto;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 2rem;
+    border: 0;
+    gap: 0.8rem;
+    color: hsl(0, 0%, 100%);
+    border-radius: 0.4rem;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.discount-price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.initial-price {
+    font-size: small;
+    text-decoration: line-through;
+    margin: 0;
+    font-weight: 500;
+}
+
+.pef {
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: medium;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+a:hover {
+    color: hsl(158, 36%, 37%);
+    cursor: pointer;
+}
+
+@media (max-width: 735px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+
+    .pefume-image-mobile {
+        z-index: 1;
+        width: 100%;
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .pefume-image-desktop {
+        height: 1rem;
+        width: 1rem;
+        justify-self: center;
+        align-self: center;
+        grid-column: 1;
+        grid-row: 1/ 2;
+    }
+
+    .card {
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 0.5rem;
+        width: 95%;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .product-info {
+        padding: 1rem 1.5rem;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 735px) {
+
+
+
+    .card {
+        width: 35rem;
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        justify-content: center;
+        border-radius: 0.4rem;
+        gap: 0;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .container {
+
+        margin: 0;
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .product-info {
+
+        padding: 1rem 1.8rem;
+        margin: 0;
+        width: 40%;
+
+    }
+
+    .pefume-image-mobile {
+
+        height: 1rem;
+        width: 1rem;
+        grid-column: 2;
+        align-self: center;
+        justify-self: center;
+        grid-row: 2;
+        z-index: 1;
+
+    }
+
+    .pefume-image-desktop {
+        width: 100%;
+        height: 100%;
+        grid-row: 1 / 4;
+        grid-column: 1 / 3;
+        z-index: 2;
+    }
+}
